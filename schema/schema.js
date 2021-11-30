@@ -40,71 +40,71 @@ const Ticket = {
 
 const MovieTheater = {
     "id": String,
-    "Name": String,
-    "Address": String,
-    "CreatedAt": Datetime,
-    "IsActive": Boolean,
-    "Auditorium": [
+    "name": String,
+    "address": String,
+    "createdAt": Datetime,
+    "isActive": Boolean,
+    "auditoriums": [
         {
-            "ID_Auditorium": String,
-            "AuditoriumType": String,
-            "CreatedAt": Datetime,
-            "IsActive": Boolean,
-            "Seat": [
+            "id": String,
+            "type": String,
+            "createdAt": Datetime,
+            "isActive": Boolean,
+            "seats": [
                 {
-                    "ID_Seat": String,
-                    "SeatName": String,
-                    "Seattype": String,
-                    "CreatedAt": Datetime,
-                    "IsActive": Boolean
+                    "id": String,
+                    "name": String,
+                    "type": String,
+                    "createdAt": Datetime,
+                    "isActive": Boolean
                 }
             ]
         }
     ],
-    "ID_Staff": String
+    "staffId": String
 }
 
 const Staff = {
-    "ID_Staff": String,
-    "CreatedAt": Datetime,
-    "IsActive": Boolean,
-    "StaffType": String,
-    "Account": {
-        "ID_Account": String,
-        "Name": String,
-        "Birthday": Date,
-        "Address": String,
-        "CMND": String,
-        "Phone": String,
-        "Sex": String,
-        "Email": String,
-        "Password": String,
-        "CreatedAt": Datetime,
-        "IsActive": Boolean,
-        "Member": {
-            "BankName": String,
-            "BankAccountNumber": String,
-            "CreatedAt": Datetime,
+    "id": String,
+    "createdAt": Datetime,
+    "isActive": Boolean,
+    "type": String,
+    "account": {
+        "id": String,
+        "name": String,
+        "birthday": Date,
+        "address": String,
+        "idCard": String,		// CMND
+        "phone": String,
+        "sex": String,
+        "email": String,
+        "password": String,
+        "createdAt": Datetime,
+        "isActive": Boolean,
+        "member": {
+            "bankName": String,
+            "bankAccountNumber": String,
+            "createdAt": Datetime,
             "IsActive": Boolean
         }
     }
 }
 
 const Booking = {
-    "ID_Booking": String,
-    "CreatedAt": Datetime,
-    "IsActive": Boolean,
-    "ID_Account": String,
-    "ID_Ticket": String,
+    "id": String,
+    "createdAt": Datetime,
+    "isActive": Boolean,
+    "accountId": String,
+    "ticketId": String,
 }
 
 const Promotion = {
-    "ID_Promotion": String,
-    "PromotionName": String,
-    "PercentReduction": String,
-    "ConditionApply": String,
-    "PromotionContent": String,
-    "CreatedAt": Datetime,
-    "IsActive": Boolean,
-    "ID_Staff": String
+    "id": String,
+    "name": String,
+    "rercentReduction": String,
+    "conditionApply": String,
+    "content": String,
+    "createdAt": Datetime,
+    "isActive": Boolean,
+    "staffId": String
 }

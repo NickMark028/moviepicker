@@ -69,9 +69,6 @@ const Staff = {
     "CreatedAt": String,
     "IsActive": Boolean,
     "StaffType": String,
-    "CreatedAt": String,
-    "IsActive": Boolean,
-    "StaffType": String,
     "Account": {
         "ID_Account": String,
         "Name": String,

@@ -1,5 +1,10 @@
+/*
+	isActive is set to true for every collections/documents
+*/
+
 const showtimes = {
     "id": String,
+    "movieTheaters": String,
     "startTime": Timestamp,
     "endTime": Timestamp,
     "showDate": Timestamp,
@@ -18,21 +23,18 @@ const showtimes = {
 const movies = {
     "id": String,
     "name": String,
-    "poster": String,
-    "video": String,
-    "trailer": String,
+    "poster": [ String ],		// List of URL images (Use Cloud storage)
+    "trailer": String,			// URL video (Use Cloud storage)
     "movieContent": String,
-    "genre": [ String ],
-    "length": Number,
+    "genre": [ String ],		// comedy, horror, ...
+    "length": Number,			// length in seconds
     "createdAt": Timestamp,
     "isActive": Boolean,
 }
 
 const tickets = {
-    "id": String,
+    "id": String,				// use for qrCode too
     "memberId": String,
-    "qrCode": String,
-    "hasPaid": Boolean,
     "price": Number,
     "movieId": String,
     "movieTheaterId": String,

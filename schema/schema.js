@@ -23,7 +23,9 @@ const Movie = {
     "Trailer": String,
     "MovieContent": String,
     "MovieType": [String],
-    "MovieLenght": String
+    "MovieLength": String
+    "CreatedAt": Datetime,
+    "IsActive": Boolean,
 }
 
 const Ticket = {
@@ -31,7 +33,7 @@ const Ticket = {
     "QR": String,
     "IsPay": Boolean,
     "Price": String,
-    "CreatedAt": String,
+    "CreatedAt": Datetime,
     "IsActive": Boolean,
     "MovieID_Movie": String,
     "SeatID_Seat": String,
@@ -42,20 +44,20 @@ const Movietheater = {
     "ID_MovieTheater": String,
     "MovieTheaterName": String,
     "Address": String,
-    "CreatedAt": String,
+    "CreatedAt": Datetime,
     "IsActive": Boolean,
     "Auditorium": [
         {
             "ID_Auditorium": String,
             "AuditoriumType": String,
-            "CreatedAt": String,
+            "CreatedAt": Datetime,
             "IsActive": Boolean,
             "Seat": [
                 {
                     "ID_Seat": String,
                     "SeatName": String,
                     "Seattype": String,
-                    "CreatedAt": String,
+                    "CreatedAt": Datetime,
                     "IsActive": Boolean
                 }
             ]
@@ -64,7 +66,7 @@ const Movietheater = {
     "Staff": [
         {
             "ID_Staff": String,
-            "CreatedAt": String,
+            "CreatedAt": Datetime,
             "IsActive": Boolean,
             "StaffType": String,
             "Account": {
@@ -77,12 +79,12 @@ const Movietheater = {
                 "Sex": String,
                 "Email": String,
                 "Password": String,
-                "CreatedAt": String,
+                "CreatedAt": Datetime,
                 "IsActive": Boolean,
                 "Member": {
                     "BankName": String,
                     "BankAccountNumber": String,
-                    "CreatedAt": String,
+                    "CreatedAt": Datetime,
                     "IsActive": Boolean
                 }
             }
@@ -92,7 +94,7 @@ const Movietheater = {
 
 const Booking = {
     "ID_Booking" : String,
-    "CreatedAt": String,
+    "CreatedAt": Datetime,
     "IsActive": Boolean,
     "ID_Account": String,
     "ID_Ticket" : String,
@@ -104,7 +106,7 @@ const Promotion = {
     "PercentReduction" : String,
     "ConditionApply" : String,
     "PromotionContent" : String,
-    "CreatedAt": String,
+    "CreatedAt": Datetime,
     "IsActive": Boolean,
     "ID_Staff" : String
 }

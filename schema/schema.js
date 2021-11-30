@@ -1,18 +1,18 @@
 const Showtime = {
     "id": String,
-    "startTime": Datetime,
-    "endTime": Datetime,
-    "showDate": Date,
+    "startTime": Timestamp,
+    "endTime": Timestamp,
+    "showDate": Timestamp,
     "isCanceled": Boolean,
-    "createdAt": Datetime,
-    "isActive": Boolean,
     "movies": [
         {
             "id": String,
-            "createdAt": Datetime,
+            "createdAt": Timestamp,
             "isActive": Boolean,
         }
     ]
+    "createdAt": Timestamp,
+    "isActive": Boolean,
 }
 
 const Movie = {
@@ -22,8 +22,10 @@ const Movie = {
     "video": String,
     "trailer": String,
     "movieContent": String,
-    "movieType": [ String ],
-    "length": Number
+    "genre": [ String ],
+    "length": Number,
+    "createdAt": Timestamp,
+    "isActive": Boolean,
 }
 
 const Ticket = {
@@ -31,80 +33,77 @@ const Ticket = {
     "qrCode": String,
     "hasPaid": Boolean,
     "price": Number,
-    "createdAt": Datetime,
-    "isActive": Boolean,
     "movieId": String,
+    "movieTheaterId": String,
+    "auditoriumsId": String,
     "seatId": String,
-    "promotionId": String
+    "createdAt": Timestamp,
+    "isActive": Boolean,
 }
 
 const MovieTheater = {
     "id": String,
     "name": String,
     "address": String,
-    "createdAt": Datetime,
-    "isActive": Boolean,
     "auditoriums": [
         {
             "id": String,
             "type": String,
-            "createdAt": Datetime,
-            "isActive": Boolean,
             "seats": [
                 {
                     "id": String,
                     "name": String,
                     "type": String,
-                    "createdAt": Datetime,
+                    "createdAt": Timestamp,
                     "isActive": Boolean
                 }
-            ]
+            ],
+            "createdAt": Timestamp,
+            "isActive": Boolean,
         }
     ],
     "staffId": String
+    "createdAt": Timestamp,
+    "isActive": Boolean
 }
 
 const Staff = {
-    "id": String,
-    "createdAt": Datetime,
-    "isActive": Boolean,
+    "id": String,				// ID này trùng ID của user trong authentication
     "type": String,
     "account": {
-        "id": String,
         "name": String,
         "birthday": Date,
         "address": String,
         "idCard": String,		// CMND
-        "phone": String,
-        "sex": String,
+        "phone": String,		// xxxx-xxx-xxx
+        "sex": String,			// "Male" / "Female"
         "email": String,
-        "password": String,
-        "createdAt": Datetime,
-        "isActive": Boolean,
-        "member": {
-            "bankName": String,
-            "bankAccountNumber": String,
-            "createdAt": Datetime,
-            "IsActive": Boolean
-        }
-    }
+    },
+    "createdAt": Timestamp,
+    "isActive": Boolean,
+}
+
+const Member = {
+    "id": String,				// ID này trùng ID của user trong authentication
+	"account": {
+        "name": String,
+        "birthday": Date,
+        "address": String,
+        "idCard": String,		// CMND
+        "phone": String,		// xxxx-xxx-xxx
+        "sex": String,			// "Male" / "Female"
+        "email": String,
+    },
+    "bankName": String,
+    "bankAccountNumber": String,
+    "createdAt": Timestamp,
+    "IsActive": Boolean
 }
 
 const Booking = {
     "id": String,
-    "createdAt": Datetime,
+    "createdAt": Timestamp,
     "isActive": Boolean,
-    "accountId": String,
+    "memberId": String,
     "ticketId": String,
-}
-
-const Promotion = {
-    "id": String,
-    "name": String,
-    "rercentReduction": String,
-    "conditionApply": String,
-    "content": String,
-    "createdAt": Datetime,
-    "isActive": Boolean,
-    "staffId": String
 }

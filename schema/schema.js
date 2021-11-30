@@ -1,46 +1,46 @@
 const Showtime = {
-    "ID_Showtimes": String,
-    "StarTime": Datetime,
-    "EndTime": Datetime,
-    "ShowDate": Date,
-    "IsCancel": Boolean,
-    "CreatedAt": Datetime,
-    "IsActive": Boolean,
-    "Movies": [
+    "id": String,
+    "startTime": Datetime,
+    "endTime": Datetime,
+    "showDate": Date,
+    "isCanceled": Boolean,
+    "createdAt": Datetime,
+    "isActive": Boolean,
+    "movies": [
         {
-            "ID_Movie": String,
-            "CreatedAt": Datetime,
-            "IsActive": Boolean,
+            "id": String,
+            "createdAt": Datetime,
+            "isActive": Boolean,
         }
     ]
 }
 
 const Movie = {
-    "ID_Movie": String,
-    "NameMovie": String,
-    "Poster": String,
-    "Video": String,
-    "Trailer": String,
-    "MovieContent": String,
-    "MovieType": [String],
-    "MovieLenght": String
+    "id": String,
+    "name": String,
+    "poster": String,
+    "video": String,
+    "trailer": String,
+    "movieContent": String,
+    "movieType": [ String ],
+    "length": Number
 }
 
 const Ticket = {
-    "ID_Ticket": String,
-    "QR": String,
-    "IsPay": Boolean,
-    "Price": String,
-    "CreatedAt": Datetime,
-    "IsActive": Boolean,
-    "MovieID_Movie": String,
-    "SeatID_Seat": String,
-    "PromotionID_Promotion": String
+    "id": String,
+    "qrCode": String,
+    "hasPaid": Boolean,
+    "price": Number,
+    "createdAt": Datetime,
+    "isActive": Boolean,
+    "movieId": String,
+    "seatId": String,
+    "promotionId": String
 }
 
-const Movietheater = {
-    "ID_MovieTheater": String,
-    "MovieTheaterName": String,
+const MovieTheater = {
+    "id": String,
+    "Name": String,
     "Address": String,
     "CreatedAt": Datetime,
     "IsActive": Boolean,

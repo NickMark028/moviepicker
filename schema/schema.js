@@ -30,6 +30,7 @@ const movies = {
 
 const tickets = {
     "id": String,
+    "memberId": String,
     "qrCode": String,
     "hasPaid": Boolean,
     "price": Number,
@@ -64,7 +65,7 @@ const movieTheaters = {
     ],
     "staffId": String
     "createdAt": Timestamp,
-    "isActive": Boolean
+    "isActive": Boolean,
 }
 
 const staffs = {
@@ -98,12 +99,4 @@ const members = {
     "bankAccountNumber": String,
     "createdAt": Timestamp,
     "IsActive": Boolean
-}
-
-const bookings = {
-    "id": String,
-    "createdAt": Timestamp,
-    "isActive": Boolean,
-    "memberId": String,
-    "ticketId": String,
 }

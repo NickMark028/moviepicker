@@ -1,4 +1,4 @@
-const Showtime = {
+const showtimes = {
     "id": String,
     "startTime": Timestamp,
     "endTime": Timestamp,
@@ -15,7 +15,7 @@ const Showtime = {
     "isActive": Boolean,
 }
 
-const Movie = {
+const movies = {
     "id": String,
     "name": String,
     "poster": String,
@@ -28,7 +28,7 @@ const Movie = {
     "isActive": Boolean,
 }
 
-const Ticket = {
+const tickets = {
     "id": String,
     "qrCode": String,
     "hasPaid": Boolean,
@@ -41,7 +41,7 @@ const Ticket = {
     "isActive": Boolean,
 }
 
-const MovieTheater = {
+const movieTheaters = {
     "id": String,
     "name": String,
     "address": String,
@@ -67,7 +67,7 @@ const MovieTheater = {
     "isActive": Boolean
 }
 
-const Staff = {
+const staffs = {
     "id": String,				// ID này trùng ID của user trong authentication
     "type": String,
     "account": {
@@ -83,7 +83,7 @@ const Staff = {
     "isActive": Boolean,
 }
 
-const Member = {
+const members = {
     "id": String,				// ID này trùng ID của user trong authentication
 	"account": {
         "name": String,
@@ -100,7 +100,7 @@ const Member = {
     "IsActive": Boolean
 }
 
-const Booking = {
+const bookings = {
     "id": String,
     "createdAt": Timestamp,
     "isActive": Boolean,

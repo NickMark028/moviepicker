@@ -61,50 +61,53 @@ const Movietheater = {
             ]
         }
     ],
-    "Staff": [
-        {
-            "ID_Staff": String,
+    "ID_Staff": String
+}
+
+const Staff = {
+    "ID_Staff": String,
+    "CreatedAt": String,
+    "IsActive": Boolean,
+    "StaffType": String,
+    "CreatedAt": String,
+    "IsActive": Boolean,
+    "StaffType": String,
+    "Account": {
+        "ID_Account": String,
+        "Name": String,
+        "Birthday": Date,
+        "Address": String,
+        "CMND": String,
+        "Phone": String,
+        "Sex": String,
+        "Email": String,
+        "Password": String,
+        "CreatedAt": String,
+        "IsActive": Boolean,
+        "Member": {
+            "BankName": String,
+            "BankAccountNumber": String,
             "CreatedAt": String,
-            "IsActive": Boolean,
-            "StaffType": String,
-            "Account": {
-                "ID_Account": String,
-                "Name": String,
-                "Birthday": Date,
-                "Address": String,
-                "CMND": String,
-                "Phone": String,
-                "Sex": String,
-                "Email": String,
-                "Password": String,
-                "CreatedAt": String,
-                "IsActive": Boolean,
-                "Member": {
-                    "BankName": String,
-                    "BankAccountNumber": String,
-                    "CreatedAt": String,
-                    "IsActive": Boolean
-                }
-            }
+            "IsActive": Boolean
         }
-    ]
+    }
 }
 
 const Booking = {
-    "ID_Booking" : String,
+    "ID_Booking": String,
     "CreatedAt": String,
     "IsActive": Boolean,
     "ID_Account": String,
-    "ID_Ticket" : String,
+    "ID_Ticket": String,
 }
 
 const Promotion = {
-    "ID_Promotion" : String, 
-    "PromotionName" : String, 
-    "PercentReduction" : String,
-    "ConditionApply" : String,
-    "PromotionContent" : String,
+    "ID_Promotion": String,
+    "PromotionName": String,
+    "PercentReduction": String,
+    "ConditionApply": String,
+    "PromotionContent": String,
     "CreatedAt": String,
     "IsActive": Boolean,
-    "ID_Staff" : String
+    "ID_Staff": String
 }

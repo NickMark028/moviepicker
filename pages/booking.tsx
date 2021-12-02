@@ -1,10 +1,14 @@
 import React from "react";
 
-import { Header, Main, Footer, Cards } from "@components";
 import { Booking } from "../src/components/booking/booking";
-
+import { Header } from "@components";
 const Book: React.FC = () => {
-    return <Booking />;
+    return (
+        <>
+            <Header />
+            <Booking />
+        </>
+    );
 };
 
 export default Book;

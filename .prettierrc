@@ -3,5 +3,11 @@
     "trailingComma": "all",
     "singleQuote": false,
     "printWidth": 80,
-    "tabWidth": 4
+    "tabWidth": 4,
+    "prettier/prettier": [
+        "error",
+        {
+            "endOfLine": "auto"
+        }
+    ]
 }

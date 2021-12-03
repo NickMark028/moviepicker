@@ -1,30 +1,21 @@
 import React, { Component, useEffect } from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
-export const e = () => {
-    const prevId = "1";
-
-    window.onload = () => {
-        document.getElementById("screen-next-btn").disabled = true;
-    };
-
-    const timeFunction = () => {
-        document.getElementById("screen-next-btn").disabled = false;
-    };
-
-    const myFunction = (id) => {
-        (document.getElementById(prevId).style.background =
-            "rgb(243, 235, 235)"),
-            (document.getElementById(id).style.background = "#df0e62"),
-            (prevId = id);
-    };
-};
-
+import e from "public/assets/js/next";
 export class Booking extends Component {
     render() {
         return (
             <>
                 <Head>
+                    <div>
+                        <meta charSet="utf-8" />
+                        <meta
+                            name="viewport"
+                            content="width=device-width, initial-scale=1"
+                        />
+                        <title>Ticket Booking</title>
+                    </div>
+
                     <link
                         rel="stylesheet"
                         type="text/css"
@@ -93,7 +84,7 @@ export class Booking extends Component {
                                             >
                                                 <div
                                                     className="carousel-cell"
-                                                    id={1}
+                                                    id="1"
                                                 >
                                                     <div className="date-numeric">
                                                         13
@@ -104,7 +95,7 @@ export class Booking extends Component {
                                                 </div>
                                                 <div
                                                     className="carousel-cell"
-                                                    id={2}
+                                                    id="2"
                                                 >
                                                     <div className="date-numeric">
                                                         14
@@ -115,7 +106,7 @@ export class Booking extends Component {
                                                 </div>
                                                 <div
                                                     className="carousel-cell"
-                                                    id={3}
+                                                    id="3"
                                                 >
                                                     <div className="date-numeric">
                                                         15
@@ -126,7 +117,7 @@ export class Booking extends Component {
                                                 </div>
                                                 <div
                                                     className="carousel-cell"
-                                                    id={4}
+                                                    id="4"
                                                 >
                                                     <div className="date-numeric">
                                                         16
@@ -137,7 +128,7 @@ export class Booking extends Component {
                                                 </div>
                                                 <div
                                                     className="carousel-cell"
-                                                    id={5}
+                                                    id="5"
                                                 >
                                                     <div className="date-numeric">
                                                         17
@@ -148,7 +139,7 @@ export class Booking extends Component {
                                                 </div>
                                                 <div
                                                     className="carousel-cell"
-                                                    id={6}
+                                                    id="6"
                                                 >
                                                     <div className="date-numeric">
                                                         18
@@ -159,7 +150,7 @@ export class Booking extends Component {
                                                 </div>
                                                 <div
                                                     className="carousel-cell"
-                                                    id={7}
+                                                    id="7"
                                                 >
                                                     <div className="date-numeric">
                                                         19
@@ -341,7 +332,7 @@ export class Booking extends Component {
                                             name="next-step"
                                             className="next-step"
                                             defaultValue="Continue Booking"
-                                            disabled
+                                            // disabled
                                         />
                                     </fieldset>
                                     <fieldset>
@@ -1371,6 +1362,7 @@ export class Booking extends Component {
                     type="text/javascript"
                     src="assets/js/ticket-booking.js"
                 />
+                <script type="text/javascript" src="assets/js/next.js" />
             </>
         );
     }

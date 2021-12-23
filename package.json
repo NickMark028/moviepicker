@@ -6,7 +6,6 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
         "prettier": "prettier --write '**/*.{js,jsx,ts,tsx}'"
     },
     "dependencies": {
@@ -19,10 +18,12 @@
         "react": "17.0.2",
         "react-bootstrap": "^1.4.3",
         "react-dom": "17.0.2",
+        "react-helmet": "^6.1.0",
         "react-redux": "^7.2.4",
         "sass": "^1.32.5"
     },
     "devDependencies": {
+        "@types/jquery": "^3.5.9",
         "@types/node": "^14.14.13",
         "@types/react": "^17.0.0",
         "@types/react-dom": "^17.0.0",

@@ -1,13 +1,18 @@
 import React, { Component, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
-
+import axios from "axios";
 // window.addEventListener("onClick", timeFunction, false);
 
 const timeFunction = () => {
     document.getElementById("screen-next-btn").disabled = false;
 };
-
+const payment = (action) => {
+    axios({
+        method: "post",
+        url: "https://nailweb.herokuapp.com/payment",
+    });
+};
 export function Booking(): JSX.Element {
     return (
         <>
@@ -267,148 +272,21 @@ export function Booking(): JSX.Element {
                                                                 Payment
                                                             </h3>
                                                             <div className="payment-row payment">
-                                                                <div className="col-50 payment">
-                                                                    <label
-                                                                        htmlFor="card"
-                                                                        className="method card"
-                                                                    >
-                                                                        <div className="icon-container">
-                                                                            <i
-                                                                                className="fa fa-cc-visa"
-                                                                                style={{
-                                                                                    color: "navy",
-                                                                                }}
-                                                                            />
-                                                                            <i
-                                                                                className="fa fa-cc-amex"
-                                                                                style={{
-                                                                                    color: "blue",
-                                                                                }}
-                                                                            />
-                                                                            <i
-                                                                                className="fa fa-cc-mastercard"
-                                                                                style={{
-                                                                                    color: "red",
-                                                                                }}
-                                                                            />
-                                                                            <i
-                                                                                className="fa fa-cc-discover"
-                                                                                style={{
-                                                                                    color: "orange",
-                                                                                }}
-                                                                            />
-                                                                        </div>
-                                                                        <div className="radio-input">
-                                                                            <input
-                                                                                type="radio"
-                                                                                id="card"
-                                                                            />
-                                                                            Pay
-                                                                            RS.200.00
-                                                                            with
-                                                                            credit
-                                                                            card
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                                <div className="col-50 payment">
-                                                                    <label
-                                                                        htmlFor="paypal"
-                                                                        className="method paypal"
-                                                                    >
-                                                                        <div className="icon-container">
-                                                                            <i
-                                                                                className="fa fa-paypal"
-                                                                                style={{
-                                                                                    color: "navy",
-                                                                                }}
-                                                                            />
-                                                                        </div>
-                                                                        <div className="radio-input">
-                                                                            <input
-                                                                                id="paypal"
-                                                                                type="radio"
-                                                                                defaultChecked
-                                                                            />
-                                                                            Pay
-                                                                            $30.00
-                                                                            with
-                                                                            PayPal
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div className="payment-row">
-                                                                <div className="col-50">
-                                                                    <label htmlFor="cname">
-                                                                        Cardholder's
-                                                                        Name
-                                                                    </label>
-                                                                    <input
-                                                                        type="text"
-                                                                        id="cname"
-                                                                        name="cardname"
-                                                                        placeholder="Firstname Lastname"
-                                                                        required
-                                                                    />
-                                                                </div>
-                                                                <div className="col-50">
-                                                                    <label htmlFor="ccnum">
-                                                                        Credit
-                                                                        card
-                                                                        number
-                                                                    </label>
-                                                                    <input
-                                                                        type="text"
-                                                                        id="ccnum"
-                                                                        name="cardnumber"
-                                                                        placeholder="xxxx-xxxx-xxxx-xxxx"
-                                                                        required
+                                                                <div className="col-45 payment">
+                                                                    <img
+                                                                        className="logo"
+                                                                        src="assets/images/MoMoLogo.png"
+                                                                        style={{
+                                                                            width: "40%",
+                                                                        }}
                                                                     />
                                                                 </div>
                                                             </div>
                                                             <div className="payment-row">
                                                                 <div className="col-50">
-                                                                    <label htmlFor="expmonth">
-                                                                        Exp
-                                                                        Month
-                                                                    </label>
                                                                     <input
-                                                                        type="text"
-                                                                        id="expmonth"
-                                                                        name="expmonth"
-                                                                        placeholder="September"
                                                                         required
                                                                     />
-                                                                </div>
-                                                                <div className="col-50">
-                                                                    <div className="payment-row">
-                                                                        <div className="col-50">
-                                                                            <label htmlFor="expyear">
-                                                                                Exp
-                                                                                Year
-                                                                            </label>
-                                                                            <input
-                                                                                type="text"
-                                                                                id="expyear"
-                                                                                name="expyear"
-                                                                                placeholder="yyyy"
-                                                                                required
-                                                                            />
-                                                                        </div>
-                                                                        <div className="col-50">
-                                                                            <label htmlFor="cvv">
-                                                                                CVV
-                                                                            </label>
-                                                                            <input
-                                                                                type="text"
-                                                                                id="cvv"
-                                                                                name="cvv"
-                                                                                placeholder="xxx"
-                                                                                required
-                                                                            />
-                                                                        </div>
-                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -419,19 +297,18 @@ export function Booking(): JSX.Element {
                                     </div>
                                     <input
                                         type="button"
-                                        name="next-step"
                                         className="next-step pay-btn"
                                         defaultValue="Confirm Payment"
+                                        onClick={payment}
                                     />
                                     <input
                                         type="button"
-                                        name="previous-step"
                                         className="cancel-pay-btn"
                                         defaultValue="Cancel Payment"
                                         // onClick={location.href}'index.html';"
                                     />
                                 </fieldset>
-                                <fieldset>
+                                {/* <fieldset>
                                     <h2>E-Ticket</h2>
                                     <div className="ticket-body">
                                         <div className="ticket">
@@ -1228,7 +1105,7 @@ export function Booking(): JSX.Element {
                                         defaultValue="Browse to Home Page"
                                         // onClick={location.href='index.html'}
                                     />
-                                </fieldset>
+                                </fieldset> */}
                             </form>
                         </div>
                     </div>

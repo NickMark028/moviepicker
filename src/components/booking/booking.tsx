@@ -1,17 +1,25 @@
+/* eslint-disable prettier/prettier */
 import React, { Component, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
 import axios from "axios";
+import { redirect } from "next/dist/next-server/server/api-utils";
 // window.addEventListener("onClick", timeFunction, false);
 
 const timeFunction = () => {
     document.getElementById("screen-next-btn").disabled = false;
 };
-const payment = (action) => {
-    axios({
-        method: "post",
-        url: "https://nailweb.herokuapp.com/payment",
-    });
+const payment = () => {
+    axios(
+        {
+            method: "post",
+            url: "http://https://nailweb.herokuapp.com/payment",
+            data: {
+                amount: localStorage.getItem('amount'),
+            },
+        },
+        { withCredentials: true },
+    ).then((res) => window.location.assign(res.data));
 };
 export function Booking(): JSX.Element {
     return (
@@ -308,7 +316,7 @@ export function Booking(): JSX.Element {
                                         // onClick={location.href}'index.html';"
                                     />
                                 </fieldset>
-                                {/* <fieldset>
+                                <fieldset>
                                     <h2>E-Ticket</h2>
                                     <div className="ticket-body">
                                         <div className="ticket">
@@ -1105,7 +1113,7 @@ export function Booking(): JSX.Element {
                                         defaultValue="Browse to Home Page"
                                         // onClick={location.href='index.html'}
                                     />
-                                </fieldset> */}
+                                </fieldset>
                             </form>
                         </div>
                     </div>

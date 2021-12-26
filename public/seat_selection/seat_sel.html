@@ -34,7 +34,7 @@
 					<li>: Commando 3</li>
 					<li>: April 12, 22:00</li>
 					<li>: <span id="counter">0</span></li>
-					<li>: <b><i>RS.</i><span id="total">0</span></b></li>
+					<li>: <b><span id="total">0</span><i>VND.</i></b></li>
 				</ul>
 				<div class="clear"></div>
 				<ul id="selected-seats" class="scrollbar scrollbar1"></ul>
@@ -44,7 +44,7 @@
 			</div>
 
 			<script type="text/javascript">
-				var price = 110; //price
+				var price = 60000; //price
 				$(document).ready(function () {
 					var $cart = $('#selected-seats'), //Sitting Area
 						$counter = $('#counter'), //Votes
@@ -86,14 +86,14 @@
 
 								$counter.text(sc.find('selected').length + 1);
 								$total.text(recalculateTotal(sc) + price);
-
+								localStorage.setItem('price',$total.text());
 								return 'selected';
 							} else if (this.status() == 'selected') { //Checked
 								//Update Number
 								$counter.text(sc.find('selected').length - 1);
 								//update totalnum
 								$total.text(recalculateTotal(sc) - price);
-
+								localStorage.setItem('price',$total.text());
 								//Delete reservation
 								$('#cart-item-' + this.settings.id).remove();
 								//optional
@@ -116,7 +116,6 @@
 					sc.find('selected').each(function () {
 						total += price;
 					});
-
 					return total;
 				}
 			</script>

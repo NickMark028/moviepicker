@@ -10,12 +10,13 @@ const timeFunction = () => {
     document.getElementById("screen-next-btn").disabled = false;
 };
 const payment = () => {
+    console.log("payment");
     axios(
         {
             method: "post",
-            url: "http://https://nailweb.herokuapp.com/payment",
+            url: "https://nailweb.herokuapp.com/payment",
             data: {
-                amount: localStorage.getItem('amount'),
+                amount: localStorage.getItem("amount"),
             },
         },
         { withCredentials: true },

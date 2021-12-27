@@ -15,8 +15,19 @@
 </head>
 
 <body>
+	
 <div class="content">
 	<h2>Seat Booking</h2>
+	<script  type="text/javascript">
+		// Grab the output eleent
+		$(document).ready(function () {
+					var $cart = $('#showtime')
+					$cart.text(localStorage.getItem('showtime'))
+		});
+		console.log(localStorage.getItem('showtime'));
+	  // "el" is the parameter that references the "this" argument that was passed
+	  
+</script>
 	<div class="main">
 		<div class="demo">
 			<div id="seat-map">
@@ -32,7 +43,8 @@
 				</ul>
 				<ul class="book-right">
 					<li>: Commando 3</li>
-					<li>: April 12, 22:00</li>
+					<li>: <span id="showtime"></span>
+					</li>
 					<li>: <span id="counter">0</span></li>
 					<li>: <b><span id="total">0</span><i>VND.</i></b></li>
 				</ul>
@@ -83,7 +95,7 @@
 									.attr('id', 'cart-item-' + this.settings.id)
 									.data('seatId', this.settings.id)
 									.appendTo($cart);
-
+								localStorage.setItem('seats',$cart.text());
 								$counter.text(sc.find('selected').length + 1);
 								$total.text(recalculateTotal(sc) + price);
 								localStorage.setItem('price',$total.text());
@@ -92,6 +104,7 @@
 								//Update Number
 								$counter.text(sc.find('selected').length - 1);
 								//update totalnum
+								localStorage.setItem('seats',$cart.text());
 								$total.text(recalculateTotal(sc) - price);
 								localStorage.setItem('price',$total.text());
 								//Delete reservation

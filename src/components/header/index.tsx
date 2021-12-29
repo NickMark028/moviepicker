@@ -21,7 +21,10 @@ export const Header: React.FC = () => {
                 <nav className="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
                     <div className="container">
                         <h1>
-                            <a className="navbar-brand" href="index.html">
+                            <a
+                                className="navbar-brand"
+                                href="http://localhost:3000/"
+                            >
                                 <span
                                     className="fa fa-play icon-log"
                                     aria-hidden="true"
@@ -47,12 +50,18 @@ export const Header: React.FC = () => {
                         >
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="index.html">
+                                    <a
+                                        className="nav-link"
+                                        href="http://localhost:3000/"
+                                    >
                                         Home
                                     </a>
                                 </li>
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="movies.html">
+                                    <a
+                                        className="nav-link"
+                                        href="http://localhost:3000/movie"
+                                    >
                                         Movies
                                     </a>
                                 </li>

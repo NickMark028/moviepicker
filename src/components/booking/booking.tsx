@@ -6,28 +6,26 @@ import axios from "axios";
 import { redirect } from "next/dist/next-server/server/api-utils";
 // window.addEventListener("onClick", (e) => handleClick(e,"Screen 1 10:00 AM"), false);
 
-
-const payment = () => {
-    console.log("payment");
-    axios(
-        {
-            method: "post",
-            url: "https://nailweb.herokuapp.com/payment",
-            data: {
-                amount: localStorage.getItem("price"),
-            },
-        },
-        { withCredentials: true },
-    ).then((res) => window.location.assign(res.data));
-};
 export function Booking(): JSX.Element {
-
+    const payment = () => {
+        console.log("payment");
+        axios(
+            {
+                method: "post",
+                url: "https://nailweb.herokuapp.com/payment",
+                data: {
+                    amount: localStorage.getItem("price"),
+                },
+            },
+            { withCredentials: true },
+        ).then((res) => window.location.assign(res.data));
+    };
     const handleClick = (e, path) => {
         var list = path.toString().split(" ");
-        localStorage.setItem('showtime',list[2] + " " + list[3]);
-        localStorage.setItem('screen',list[1]);
+        localStorage.setItem("showtime", list[2] + " " + list[3]);
+        localStorage.setItem("screen", list[1]);
         document.getElementById("screen-next-btn").disabled = false;
-      };
+    };
     return (
         <>
             <Head>
@@ -107,19 +105,34 @@ export function Booking(): JSX.Element {
                                                 <div className="time-btn">
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         1:05 PM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         4:00 PM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         9:00 PM
                                                     </button>
@@ -132,7 +145,12 @@ export function Booking(): JSX.Element {
                                                 <div className="time-btn">
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         3:00 PM
                                                     </button>
@@ -145,13 +163,23 @@ export function Booking(): JSX.Element {
                                                 <div className="time-btn">
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         9:05 AM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         10:00 PM
                                                     </button>
@@ -164,37 +192,67 @@ export function Booking(): JSX.Element {
                                                 <div className="time-btn">
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         9:05 AM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         11:00 AM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         3:00 PM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         7:00 PM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         10:00 PM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         11:00 PM
                                                     </button>
@@ -207,25 +265,45 @@ export function Booking(): JSX.Element {
                                                 <div className="time-btn">
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         9:05 AM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         12:00 PM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         1:00 PM
                                                     </button>
                                                     <button
                                                         className="screen-time"
-                                                        onClick={(e) => handleClick(e,"Screen 1 10:00 AM")}
+                                                        onClick={(e) =>
+                                                            handleClick(
+                                                                e,
+                                                                "Screen 1 10:00 AM",
+                                                            )
+                                                        }
                                                     >
                                                         3:00 PM
                                                     </button>

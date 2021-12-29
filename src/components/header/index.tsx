@@ -121,82 +121,82 @@ export const Header: React.FC = () => {
                                             </h3>
                                             <ul className="search-items">
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Action
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Drama
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Family
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Thriller
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Commedy
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Romantic
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Tv-Series
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Horror
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Action
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Drama
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Family
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Thriller
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Commedy
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Romantic
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Tv-Series
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movies.html">
+                                                    <a href="movie">
                                                         Horror
                                                     </a>
                                                 </li>

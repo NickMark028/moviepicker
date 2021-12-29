@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
                             <div className="right-side">
                                 <div className="row footer-about">
                                     <div className="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-                                        <a href="movies.html">
+                                        <a href="movie">
                                             <img
                                                 className="img-fluid"
                                                 src="assets/images/banner1.jpg"
@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
                                         </a>
                                     </div>
                                     <div className="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-                                        <a href="movies.html">
+                                        <a href="movie">
                                             <img
                                                 className="img-fluid"
                                                 src="assets/images/banner2.jpg"
@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
                                         </a>
                                     </div>
                                     <div className="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-                                        <a href="movies.html">
+                                        <a href="movie">
                                             <img
                                                 className="img-fluid"
                                                 src="assets/images/banner3.jpg"
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
                                         </a>
                                     </div>
                                     <div className="col-md-3 col-6 footer-img mb-lg-0 mb-4">
-                                        <a href="movies.html">
+                                        <a href="movie">
                                             <img
                                                 className="img-fluid"
                                                 src="assets/images/banner4.jpg"
@@ -102,24 +102,24 @@ export const Footer: React.FC = () => {
                                         <h6>Locations</h6>
                                         <ul>
                                             <li>
-                                                <a href="movies.html">Asia</a>
+                                                <a href="movie">Asia</a>
                                             </li>
                                             <li>
-                                                <a href="movies.html">France</a>
+                                                <a href="movie">France</a>
                                             </li>
                                             <li>
-                                                <a href="movies.html">Taiwan</a>
+                                                <a href="movie">Taiwan</a>
                                             </li>
                                             <li>
-                                                <a href="movies.html">
+                                                <a href="movie">
                                                     United States
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="movies.html">Korea</a>
+                                                <a href="movie">Korea</a>
                                             </li>
                                             <li>
-                                                <a href="movies.html">
+                                                <a href="movie">
                                                     United Kingdom
                                                 </a>
                                             </li>

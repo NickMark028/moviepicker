@@ -34,7 +34,7 @@ export class Movie extends Component {
                                             <h4>
                                                 <a
                                                     className="show-title"
-                                                    href="movies.html"
+                                                    href="movie"
                                                 >
                                                     Show all
                                                 </a>
@@ -594,7 +594,7 @@ export class Movie extends Component {
                                         <h4>
                                             <a
                                                 className="show-title"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 Show all
                                             </a>
@@ -1297,7 +1297,7 @@ export class Movie extends Component {
                                         <h4>
                                             <a
                                                 className="show-title"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 Show all
                                             </a>
@@ -1954,7 +1954,7 @@ export class Movie extends Component {
                                         <h4>
                                             <a
                                                 className="show-title"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 Show all
                                             </a>
@@ -2581,7 +2581,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m6.jpg"
                                                                         className="img-fluid"
@@ -2599,7 +2599,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Long Shot
                                                                 </a>
@@ -2620,7 +2620,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m5.jpg"
                                                                         className="img-fluid"
@@ -2638,7 +2638,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Jumanji
                                                                 </a>
@@ -2659,7 +2659,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m4.jpg"
                                                                         className="img-fluid"
@@ -2677,7 +2677,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Little Women
                                                                 </a>
@@ -2698,7 +2698,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m1.jpg"
                                                                         className="img-fluid"
@@ -2716,7 +2716,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Rocketman
                                                                 </a>
@@ -2737,7 +2737,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m2.jpg"
                                                                         className="img-fluid"
@@ -2755,7 +2755,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Doctor Sleep
                                                                 </a>
@@ -2776,7 +2776,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m3.jpg"
                                                                         className="img-fluid"
@@ -2794,7 +2794,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Knives Out
                                                                 </a>
@@ -2815,7 +2815,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/n1.jpg"
                                                                         className="img-fluid"
@@ -2831,7 +2831,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     No Time to
                                                                     Die
@@ -2853,7 +2853,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/n2.jpg"
                                                                         className="img-fluid"
@@ -2871,7 +2871,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Mulan
                                                                 </a>
@@ -2892,7 +2892,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/n3.jpg"
                                                                         className="img-fluid"
@@ -2910,7 +2910,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Free Guy
                                                                 </a>
@@ -2936,7 +2936,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m1.jpg"
                                                                         className="img-fluid"
@@ -2954,7 +2954,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Rocketman
                                                                 </a>
@@ -2975,7 +2975,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m2.jpg"
                                                                         className="img-fluid"
@@ -2993,7 +2993,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Doctor Sleep
                                                                 </a>
@@ -3014,7 +3014,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m3.jpg"
                                                                         className="img-fluid"
@@ -3032,7 +3032,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Knives Out
                                                                 </a>
@@ -3053,7 +3053,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m7.jpg"
                                                                         className="img-fluid"
@@ -3071,7 +3071,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Frozen 2
                                                                 </a>
@@ -3092,7 +3092,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m8.jpg"
                                                                         className="img-fluid"
@@ -3110,7 +3110,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Toy Story 4
                                                                 </a>
@@ -3131,7 +3131,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m9.jpg"
                                                                         className="img-fluid"
@@ -3149,7 +3149,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Joker
                                                                 </a>
@@ -3175,7 +3175,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m7.jpg"
                                                                         className="img-fluid"
@@ -3193,7 +3193,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Frozen 2
                                                                 </a>
@@ -3214,7 +3214,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m8.jpg"
                                                                         className="img-fluid"
@@ -3232,7 +3232,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Toy Story 4
                                                                 </a>
@@ -3253,7 +3253,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m9.jpg"
                                                                         className="img-fluid"
@@ -3271,7 +3271,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Joker
                                                                 </a>
@@ -3293,7 +3293,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m10.jpg"
                                                                         className="img-fluid"
@@ -3311,7 +3311,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     Alita
                                                                 </a>
@@ -3332,7 +3332,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m11.jpg"
                                                                         className="img-fluid"
@@ -3350,7 +3350,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     The Lego
                                                                 </a>
@@ -3371,7 +3371,7 @@ export class Movie extends Component {
                                                     <div className="col-lg-4 new-relise-gd mt-lg-0 mt-0">
                                                         <div className="slider-info">
                                                             <div className="img-circle">
-                                                                <a href="movies.html">
+                                                                <a href="movie">
                                                                     <img
                                                                         src="assets/images/m12.jpg"
                                                                         className="img-fluid"
@@ -3389,7 +3389,7 @@ export class Movie extends Component {
                                                                 <p>English</p>
                                                                 <a
                                                                     className="author-book-title"
-                                                                    href="movies.html"
+                                                                    href="movie"
                                                                 >
                                                                     The Hustle
                                                                 </a>

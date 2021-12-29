@@ -200,7 +200,7 @@ export class Homepage extends Component {
                                             <h4>
                                                 <a
                                                     className="show-title"
-                                                    href="movies.html"
+                                                    href="movie"
                                                 >
                                                     Show all
                                                 </a>
@@ -211,7 +211,7 @@ export class Homepage extends Component {
                                 <div className="w3l-populohny-grids">
                                     <div className="item vhny-grid">
                                         <div className="box16">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -239,7 +239,7 @@ export class Homepage extends Component {
                                     </div>
                                     <div className="item vhny-grid">
                                         <div className="box16">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -267,7 +267,7 @@ export class Homepage extends Component {
                                     </div>
                                     <div className="item vhny-grid">
                                         <div className="box16">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -295,7 +295,7 @@ export class Homepage extends Component {
                                     </div>
                                     <div className="item vhny-grid">
                                         <div className="box16">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -339,7 +339,7 @@ export class Homepage extends Component {
                                             <h4>
                                                 <a
                                                     className="show-title"
-                                                    href="movies.html"
+                                                    href="movie"
                                                 >
                                                     Show all
                                                 </a>
@@ -350,7 +350,7 @@ export class Homepage extends Component {
                                 <div className="owl-three owl-carousel owl-theme">
                                     <div className="item vhny-grid">
                                         <div className="box16 mb-0">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -375,7 +375,7 @@ export class Homepage extends Component {
                                         <h3>
                                             <a
                                                 className="title-gd"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 No Time to Die
                                             </a>
@@ -386,7 +386,7 @@ export class Homepage extends Component {
                                         </p>
                                         <div className="button-center text-center mt-4">
                                             <a
-                                                href="movies.html"
+                                                href="movie"
                                                 className="btn watch-button"
                                             >
                                                 Watch now
@@ -395,7 +395,7 @@ export class Homepage extends Component {
                                     </div>
                                     <div className="item vhny-grid">
                                         <div className="box16 mb-0">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -420,7 +420,7 @@ export class Homepage extends Component {
                                         <h3>
                                             <a
                                                 className="title-gd"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 Mulan
                                             </a>
@@ -431,7 +431,7 @@ export class Homepage extends Component {
                                         </p>
                                         <div className="button-center text-center mt-4">
                                             <a
-                                                href="movies.html"
+                                                href="movie"
                                                 className="btn watch-button"
                                             >
                                                 Watch now
@@ -440,7 +440,7 @@ export class Homepage extends Component {
                                     </div>
                                     <div className="item vhny-grid">
                                         <div className="box16 mb-0">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -465,7 +465,7 @@ export class Homepage extends Component {
                                         <h3>
                                             <a
                                                 className="title-gd"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 Free Guy
                                             </a>
@@ -476,7 +476,7 @@ export class Homepage extends Component {
                                         </p>
                                         <div className="button-center text-center mt-4">
                                             <a
-                                                href="movies.html"
+                                                href="movie"
                                                 className="btn watch-button"
                                             >
                                                 Watch now
@@ -485,7 +485,7 @@ export class Homepage extends Component {
                                     </div>
                                     <div className="item vhny-grid">
                                         <div className="box16 mb-0">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -510,7 +510,7 @@ export class Homepage extends Component {
                                         <h3>
                                             <a
                                                 className="title-gd"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 My Spy
                                             </a>
@@ -521,7 +521,7 @@ export class Homepage extends Component {
                                         </p>
                                         <div className="button-center text-center mt-4">
                                             <a
-                                                href="movies.html"
+                                                href="movie"
                                                 className="btn watch-button"
                                             >
                                                 Watch now
@@ -530,7 +530,7 @@ export class Homepage extends Component {
                                     </div>
                                     <div className="item vhny-grid">
                                         <div className="box16 mb-0">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -555,7 +555,7 @@ export class Homepage extends Component {
                                         <h3>
                                             <a
                                                 className="title-gd"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 Scoob
                                             </a>
@@ -566,7 +566,7 @@ export class Homepage extends Component {
                                         </p>
                                         <div className="button-center text-center mt-4">
                                             <a
-                                                href="movies.html"
+                                                href="movie"
                                                 className="btn watch-button"
                                             >
                                                 Watch now
@@ -575,7 +575,7 @@ export class Homepage extends Component {
                                     </div>
                                     <div className="item vhny-grid">
                                         <div className="box16 mb-0">
-                                            <a href="movies.html">
+                                            <a href="movie">
                                                 <figure>
                                                     <img
                                                         className="img-fluid"
@@ -600,7 +600,7 @@ export class Homepage extends Component {
                                         <h3>
                                             <a
                                                 className="title-gd"
-                                                href="movies.html"
+                                                href="movie"
                                             >
                                                 Downhill
                                             </a>
@@ -611,7 +611,7 @@ export class Homepage extends Component {
                                         </p>
                                         <div className="button-center text-center mt-4">
                                             <a
-                                                href="movies.html"
+                                                href="movie"
                                                 className="btn watch-button"
                                             >
                                                 Watch now
@@ -642,7 +642,7 @@ export class Homepage extends Component {
                                                     </p>
                                                     <a
                                                         className="watch"
-                                                        href="movies.html"
+                                                        href="movie"
                                                     >
                                                         <span
                                                             className="fa fa-play"
@@ -670,7 +670,7 @@ export class Homepage extends Component {
                                                     </p>
                                                     <a
                                                         className="watch"
-                                                        href="movies.html"
+                                                        href="movie"
                                                     >
                                                         <span
                                                             className="fa fa-play"
@@ -698,7 +698,7 @@ export class Homepage extends Component {
                                                     </p>
                                                     <a
                                                         className="watch"
-                                                        href="movies.html"
+                                                        href="movie"
                                                     >
                                                         <span
                                                             className="fa fa-play"

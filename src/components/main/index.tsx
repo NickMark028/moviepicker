@@ -37,7 +37,12 @@ export class Homepage extends Component {
                                             <div className="banner-info">
                                                 <h3>Avengers</h3>
                                                 <p>
-                                                Marvel's The Avengers(classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),or simply The Avengers,
+                                                    Marvel's The
+                                                    Avengers(classified under
+                                                    the name Marvel Avengers
+                                                    Assemble in the United
+                                                    Kingdom and Ireland),or
+                                                    simply The Avengers,
                                                     <span className="over-para">
                                                         Consequuntur hic odio
                                                         voluptatem tenetur
@@ -73,7 +78,12 @@ export class Homepage extends Component {
                                             <div className="banner-info">
                                                 <h3>Frozen</h3>
                                                 <p>
-                                                Frozen is a 2013 American computer-animated musical fantasy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures
+                                                    Frozen is a 2013 American
+                                                    computer-animated musical
+                                                    fantasy film produced by
+                                                    Walt Disney Animation
+                                                    Studios and released by Walt
+                                                    Disney Pictures
                                                     <span className="over-para">
                                                         Consequuntur hic odio
                                                         voluptatem tenetur
@@ -109,7 +119,10 @@ export class Homepage extends Component {
                                             <div className="banner-info">
                                                 <h3>Joker</h3>
                                                 <p>
-                                                    Joker is a 2019 American psychological thriller film directed and produced by Todd Phillips.
+                                                    Joker is a 2019 American
+                                                    psychological thriller film
+                                                    directed and produced by
+                                                    Todd Phillips.
                                                     <span className="over-para">
                                                         Consequuntur hic odio
                                                         voluptatem tenetur
@@ -145,7 +158,12 @@ export class Homepage extends Component {
                                             <div className="banner-info">
                                                 <h3>Aladin</h3>
                                                 <p>
-                                                Aladdin is a 2019 American musical fantasy comedy film produced by Walt Disney Pictures. Directed by Guy Ritchie, from a script he co-wrote with John August
+                                                    Aladdin is a 2019 American
+                                                    musical fantasy comedy film
+                                                    produced by Walt Disney
+                                                    Pictures. Directed by Guy
+                                                    Ritchie, from a script he
+                                                    co-wrote with John August
                                                     <span className="over-para">
                                                         Consequuntur hic odio
                                                         voluptatem tenetur

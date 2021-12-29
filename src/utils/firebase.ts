@@ -10,14 +10,10 @@ const firebaseConfig = {
     storageBucket: "moviepicker-96f33.appspot.com",
     messagingSenderId: "497183014274",
     appId: "1:497183014274:web:21bc0f1ff47671db3d239b",
-    measurementId: "G-SCC71CB7H9"
+    measurementId: "G-SCC71CB7H9",
 };
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const firestore = getFirestore();
-export {
-    app,
-    auth,
-    firestore
-}
+export { app, auth, firestore };

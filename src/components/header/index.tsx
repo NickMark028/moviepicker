@@ -66,7 +66,10 @@ export const Header: React.FC = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="http://localhost:3000/history">
+                                    <a
+                                        className="nav-link"
+                                        href="http://localhost:3000/history"
+                                    >
                                         History
                                     </a>
                                 </li>
@@ -121,34 +124,22 @@ export const Header: React.FC = () => {
                                             </h3>
                                             <ul className="search-items">
                                                 <li>
-                                                    <a href="movie">
-                                                        Action
-                                                    </a>
+                                                    <a href="movie">Action</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Drama
-                                                    </a>
+                                                    <a href="movie">Drama</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Family
-                                                    </a>
+                                                    <a href="movie">Family</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Thriller
-                                                    </a>
+                                                    <a href="movie">Thriller</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Commedy
-                                                    </a>
+                                                    <a href="movie">Commedy</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Romantic
-                                                    </a>
+                                                    <a href="movie">Romantic</a>
                                                 </li>
                                                 <li>
                                                     <a href="movie">
@@ -156,39 +147,25 @@ export const Header: React.FC = () => {
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Horror
-                                                    </a>
+                                                    <a href="movie">Horror</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Action
-                                                    </a>
+                                                    <a href="movie">Action</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Drama
-                                                    </a>
+                                                    <a href="movie">Drama</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Family
-                                                    </a>
+                                                    <a href="movie">Family</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Thriller
-                                                    </a>
+                                                    <a href="movie">Thriller</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Commedy
-                                                    </a>
+                                                    <a href="movie">Commedy</a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Romantic
-                                                    </a>
+                                                    <a href="movie">Romantic</a>
                                                 </li>
                                                 <li>
                                                     <a href="movie">
@@ -196,9 +173,7 @@ export const Header: React.FC = () => {
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="movie">
-                                                        Horror
-                                                    </a>
+                                                    <a href="movie">Horror</a>
                                                 </li>
                                             </ul>
                                         </div>

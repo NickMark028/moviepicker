@@ -6,7 +6,7 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx}'"
+        "formatter": "npx prettier ./src --write"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^1.6.0",

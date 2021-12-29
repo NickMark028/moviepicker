@@ -6,30 +6,35 @@ import axios from "axios";
 import { redirect } from "next/dist/next-server/server/api-utils";
 // window.addEventListener("onClick", (e) => handleClick(e,"Screen 1 10:00 AM"), false);
 
-
-
 export function Ticket() {
     const getScreen = () => {
         if (process.browser) {
-            return localStorage.getItem('screen')
-         }
-    } 
+            return localStorage.getItem("screen");
+        }
+    };
     const getSeats = () => {
         if (process.browser) {
-            
-            return localStorage.getItem('seats')!.match(/.{1,7}/g)?.join('\n')
-         }
-    } 
+            return localStorage
+                .getItem("seats")!
+                .match(/.{1,7}/g)
+                ?.join("\n");
+        }
+    };
     const getShowTime = () => {
         if (process.browser) {
-            return localStorage.getItem('showtime')
-         }
-    } 
+            return localStorage.getItem("showtime");
+        }
+    };
     const getPrice = () => {
         if (process.browser) {
-            return localStorage.getItem('price')
-         }
-    } 
+            return localStorage.getItem("price");
+        }
+    };
+    const getName = () => {
+        if (process.browser) {
+            return localStorage.getItem("moviename");
+        }
+    };
     return (
         <>
             <div>
@@ -39,16 +44,15 @@ export function Ticket() {
                         <div className="ticket">
                             <div className="holes-top" />
                             <div className="title">
-                                <p className="cinema">
-                                    MyShowz Entertainment
-                                </p>
+                                <p className="cinema">MyShowz Entertainment</p>
                                 <p className="movie-title">
-                                    Movie Name
+                                    Movie Name: {getName}
                                 </p>
                             </div>
                             <div className="poster">
                                 <img
                                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/only-god-forgives.jpg"
+                                    style={{ width: "25%" }}
                                     alt="Movie: Only God Forgives"
                                 />
                             </div>
@@ -67,9 +71,7 @@ export function Ticket() {
                                             <td className="bigger">
                                                 {getSeats()}
                                             </td>
-                                            <td className="bigger">
-                                                
-                                            </td>
+                                            <td className="bigger"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -95,698 +97,582 @@ export function Ticket() {
                                         <tr>
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "black",
+                                                    backgroundColor: "black",
                                                 }}
                                             />
                                             <td
                                                 style={{
-                                                    backgroundColor:
-                                                        "white",
+                                                    backgroundColor: "white",
                                                 }}
                                             />
                                         </tr>
@@ -823,16 +709,19 @@ export function Ticket() {
                             </div>
                         </div>
                     </div>
+
                     <input
                         type="button"
                         name="previous-step"
                         className="home-page-btn"
                         defaultValue="Browse to Home Page"
-                    // onClick={location.href='index.html'}
+                        onClick={() =>
+                            (window.location.href = "http://localhost:3000/")
+                        }
                     />
                 </fieldset>
             </div>
         </>
-    )
+    );
 }
 export default Ticket;

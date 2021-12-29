@@ -74,8 +74,7 @@ export const Signin = () => {
                     <form
                         name="sign-in-form"
                         style={{ color: "var(--theme-title)" }}
-                        action="#"
-                        onSubmit="return signInValidateForm()"
+                        action="/"
                     >
                         <h1>Sign in</h1>
                         <div className="social-container">

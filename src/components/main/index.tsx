@@ -35,11 +35,9 @@ export class Homepage extends Component {
                                     <li>
                                         <div className="slider-info banner-view bg bg2">
                                             <div className="banner-info">
-                                                <h3>Latest Movie Trailers</h3>
+                                                <h3>Avengers</h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit.
+                                                Marvel's The Avengers(classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),or simply The Avengers,
                                                     <span className="over-para">
                                                         Consequuntur hic odio
                                                         voluptatem tenetur
@@ -73,11 +71,9 @@ export class Homepage extends Component {
                                     <li>
                                         <div className="slider-info  banner-view banner-top1 bg bg2">
                                             <div className="banner-info">
-                                                <h3>Latest Online Movies</h3>
+                                                <h3>Frozen</h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit.
+                                                Frozen is a 2013 American computer-animated musical fantasy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures
                                                     <span className="over-para">
                                                         Consequuntur hic odio
                                                         voluptatem tenetur
@@ -111,11 +107,9 @@ export class Homepage extends Component {
                                     <li>
                                         <div className="slider-info banner-view banner-top2 bg bg2">
                                             <div className="banner-info">
-                                                <h3>Latest Movie Trailers</h3>
+                                                <h3>Joker</h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit.
+                                                    Joker is a 2019 American psychological thriller film directed and produced by Todd Phillips.
                                                     <span className="over-para">
                                                         Consequuntur hic odio
                                                         voluptatem tenetur
@@ -149,11 +143,9 @@ export class Homepage extends Component {
                                     <li>
                                         <div className="slider-info banner-view banner-top3 bg bg2">
                                             <div className="banner-info">
-                                                <h3>Latest Online Movies</h3>
+                                                <h3>Aladin</h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit.
+                                                Aladdin is a 2019 American musical fantasy comedy film produced by Walt Disney Pictures. Directed by Guy Ritchie, from a script he co-wrote with John August
                                                     <span className="over-para">
                                                         Consequuntur hic odio
                                                         voluptatem tenetur

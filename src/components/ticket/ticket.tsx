@@ -32,11 +32,22 @@ export function Ticket() {
     };
     const getName = () => {
         if (process.browser) {
-            return localStorage.getItem("moviename");
+            return localStorage.getItem("movieName");
         }
     };
     return (
         <>
+            <Head>
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="assets/css/e-ticket.css"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700"
+                    rel="stylesheet"
+                />
+            </Head>
             <div>
                 <fieldset>
                     <h2>E-Ticket</h2>
@@ -52,7 +63,6 @@ export function Ticket() {
                             <div className="poster">
                                 <img
                                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/only-god-forgives.jpg"
-                                    style={{ width: "25%" }}
                                     alt="Movie: Only God Forgives"
                                 />
                             </div>
